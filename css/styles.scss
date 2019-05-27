@@ -1,0 +1,113 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+    box-sizing: border-box;
+  }
+  
+html, body {
+    font-family: $font;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #f1f1f1;
+    background-image: url("../img/pat.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: flex;
+}
+  
+nav {
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    background: $bg-nav;
+    color: $color-nav;
+    overflow: auto;
+  }
+  
+#content {
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    margin-left: 15%;
+    background-color: rgba(255,255,255,0.25);
+    overflow: auto;
+}
+
+#header {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#rest-of-content {
+    min-height: 75%;
+    margin: 10px auto;
+    @include flex();
+}
+
+#header {
+    div:first-of-type {
+        margin: 10px auto;
+        width: 100%;
+        text-align: center;
+        padding: 5px 15px;
+        @include bg-header();
+    }
+    div:last-of-type{
+        margin: 15px auto;
+        width: 33.3%;
+        text-align: center;
+        padding: 5px 15px;
+        @include bg-header();
+    }
+}
+
+#content2 {
+    @include flex();
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#content3 {
+    @include flex();
+}
+
+#rest-of-content { 
+    div:first-of-type {
+        width: 20%;
+        text-align: center;
+        padding: 5px 15px;
+        @include bg();
+    }
+    #content2 {
+        #content3 {
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: transparent;
+
+            div:first-of-type {
+                margin-right: 2%;
+                @include div-style();
+            }
+            div:last-of-type {
+                margin-left: 2%;
+                @include div-style();
+            }
+        }
+        div:last-of-type {
+            width: 100%;
+            padding: 5px 15px;
+            @include bg();
+        }
+    }
+}

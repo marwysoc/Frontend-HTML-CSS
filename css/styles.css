@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  background-image: url("../img/pat.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+}
+
+nav {
+  width: 15%;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  background: #808080;
+  color: white;
+  overflow: auto;
+}
+
+#content {
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+  margin-left: 15%;
+  background-color: rgba(255, 255, 255, 0.25);
+  overflow: auto;
+}
+
+#header {
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#rest-of-content {
+  min-height: 75%;
+  margin: 10px auto;
+  display: flex;
+  align-items: stretch;
+}
+
+#header div:first-of-type {
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: #989898;
+  color: white;
+  opacity: 0.95;
+}
+
+#header div:last-of-type {
+  margin: 15px auto;
+  width: 33.3%;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: #989898;
+  color: white;
+  opacity: 0.95;
+}
+
+#content2 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#content3 {
+  display: flex;
+  align-items: stretch;
+}
+
+#rest-of-content div:first-of-type {
+  width: 20%;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: #909090;
+  color: white;
+  opacity: 0.95;
+}
+
+#rest-of-content #content2 #content3 {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+#rest-of-content #content2 #content3 div:first-of-type {
+  margin-right: 2%;
+  width: 48%;
+  margin-right: 2%;
+  background-color: #909090;
+  color: white;
+  opacity: 0.95;
+  padding: 5px 15px;
+}
+
+#rest-of-content #content2 #content3 div:last-of-type {
+  margin-left: 2%;
+  width: 48%;
+  margin-right: 2%;
+  background-color: #909090;
+  color: white;
+  opacity: 0.95;
+  padding: 5px 15px;
+}
+
+#rest-of-content #content2 div:last-of-type {
+  width: 100%;
+  padding: 5px 15px;
+  background-color: #909090;
+  color: white;
+  opacity: 0.95;
+}
